@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as ET
 from lxml import etree as lxml_etree
-import os, shutil, requests, zipfile, shlex, datetime
+import os, shutil, requests, zipfile, shlex, datetime, re, json
+import urllib.request
 from collections import defaultdict
 from lib.kodi_game_scripting.libretro_ctypes import LibretroWrapper
 
@@ -116,6 +117,22 @@ def return_info_dict_from_libretro_info_file(info_file_in):
 				info_out[name.strip()] = shlex.split(var)[0]
 	return info_out
 
+def return_info_dict_from_libretro_info_text_file(text_info_file_in=None,url_in=None):
+	info_out = dict()
+	try:
+		if text_info_file_in is not None:
+			if url_in is not None:
+				info_out['core_name'] = os.path.split(url_in)[-1].replace('.info','')
+			else:
+				 info_out['core_name'] = None
+			for line in text_info_file_in.split('\n'):
+				if '=' in line:
+					name, var = line.partition('=')[::2]
+					info_out[name.strip()] = shlex.split(var)[0]
+	except Exception as parse_exc:
+		print('Error:  Unable to get information from info %(text_info_file_in)s.  Exception: %(parse_exc)s' % {'text_info_file_in': text_info_file_in,'parse_exc':parse_exc})
+
+	return info_out
 
 def read_text_url(url_in):
 	text_out = None
@@ -505,3 +522,41 @@ def download_file(url_in,filename_fullpath,unzip_download=True):
 			except:
 				pass
 		return [os.path.join(extract_to_dir,x.filename) for x in extracted_files]
+
+def create_git_url(url):
+	branch = re.findall(r"/tree/(.*?)/", url)
+	api_url = url.replace("https://github.com", "https://api.github.com/repos")
+	if len(branch) == 0:
+		branch = re.findall(r"/blob/(.*?)/", url)[0]
+		download_dirs = re.findall(r"/blob/" + branch + r"/(.*)", url)[0]
+		api_url = re.sub(r"/blob/.*?/", "/contents/", api_url)
+	else:
+		branch = branch[0]
+		download_dirs = re.findall(r"/tree/" + branch + r"/(.*)", url)[0]
+		api_url = re.sub(r"/tree/.*?/", "/contents/", api_url)
+
+	api_url = api_url + "?ref=" + branch
+	return api_url, download_dirs
+
+def get_git_info(repo_url,ignore_these_cores_common=None):
+	api_url, download_dirs = create_git_url(repo_url)
+	info_out_list = None
+	try:
+		response = urllib.request.urlretrieve(api_url)
+	except Exception as git_except:
+		response = None
+		print('Git receive error.  Exception: %(git_except)s' % {'git_except': git_except})
+
+	if response is not None:
+		with open(response[0], "r") as f:
+			raw_data = f.read()
+			data = json.loads(raw_data)
+
+		if ignore_these_cores_common is not None:
+			# print(ignore_these_cores_common)
+			# print('|'.join([x['url'] for x in data if '.info' in x['url'] and all([y not in x['url'] for y in ignore_these_cores_common])]))
+			# print('test')
+			info_out_list = [return_info_dict_from_libretro_info_text_file(read_text_url(x['download_url']),x['download_url']) for x in data if '.info' in x['url'] and all([y not in x['url'] for y in ignore_these_cores_common])]
+		else:
+			info_out_list = [return_info_dict_from_libretro_info_text_file(read_text_url(x['download_url']),x['download_url']) for x in data if '.info' in x['url']]
+	return info_out_list
