@@ -277,6 +277,7 @@ def download_binary_and_generate_settings(source=None,current_platform=None,wrap
 				success=True
 	else:
 		print('Unable to generate settings for %(core_name)s.  Current platform: %(current_platform)s.  Required platform: %(wrapper_platform)s' % {'core_name': source,'current_platform':current_platform,'wrapper_platform':wrapper_platform})
+
 	return success,dict_out,supporting_dict
 
 def download_binary_only(source=None,current_platform=None,download_folder_path=None):
@@ -306,19 +307,20 @@ def get_settings_xml_from_binary(binary_in=None):
 		dict_out['settings']['@label'] = 'Settings'
 		dict_out['settings']['setting'] = list()
 		for setts in sorted(library_data.variables,key=lambda x: x.id):
-			current_sett = {'@label': None,
-							'@type': 'select',
-							'@id': None,
-							'@values': None,
-							'@default': None}
-			current_sett['@label'] = setts.description
-			current_sett['@id'] = setts.id
-			if type(setts.values) is list:
-				current_sett['@values'] = '|'.join(setts.values)
-			else:
-				current_sett['@values'] = setts.values
-			current_sett['@default'] = setts.default
-			dict_out['settings']['setting'].append(current_sett)
+			if setts.id not in [x.get('@id') for x in dict_out['settings']['setting']]: #Only list the setting id once
+				current_sett = {'@label': None,
+								'@type': 'select',
+								'@id': None,
+								'@values': None,
+								'@default': None}
+				current_sett['@label'] = setts.description
+				current_sett['@id'] = setts.id
+				if type(setts.values) is list:
+					current_sett['@values'] = '|'.join(set(setts.values)) #Only list values once
+				else:
+					current_sett['@values'] = setts.values
+				current_sett['@default'] = setts.default
+				dict_out['settings']['setting'].append(current_sett)
 		#Grab other data from the binary
 		supporting_dict = dict()
 		if library_data.system_info.need_fullpath:
