@@ -47,7 +47,7 @@
       <path>linux_le_generic/game.libretro.81_libretro_buildbot-1.2019.18231.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.atari800_libretro_buildbot" name="Atari - 5200 (Atari800)" provider-name="http://buildbot.libretro.com/" version="1.2020.18300">
+  <addon id="game.libretro.atari800_libretro_buildbot" name="Atari - 5200 (Atari800)" provider-name="http://buildbot.libretro.com/" version="1.2020.18343">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.atari.2600"/>
@@ -61,12 +61,33 @@
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Atari - 5200 (Atari800)</summary>
       <description lang="en_GB">Emulator for Atari 5200 by Petr Stehlik[CR]Supported files: xfd|atr|atx|cdm|cas|bin|a52|xex|zip[CR][CR]Game Addon Notes: (!) 5200.rom (md5): 281f20ea4320404ec820fb7ec0693b38[CR][CR]BIOS files are required for this core to function correctly</description>
-      <license>GPL</license>
+      <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/atari800_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit e0e39a38 (2020-02-08)</news>
-      <size>490614</size>
-      <path>linux_le_generic/game.libretro.atari800_libretro_buildbot-1.2020.18300.zip</path>
+      <news>Built from libretro buildbot commit 2e57b4b9 (2020-03-22)</news>
+      <size>490536</size>
+      <path>linux_le_generic/game.libretro.atari800_libretro_buildbot-1.2020.18343.zip</path>
+    </extension>
+  </addon>
+  <addon id="game.libretro.bk_libretro_buildbot" name="Elektronika - BK-0010/BK-0011(M)" provider-name="http://buildbot.libretro.com/" version="1.2020.18332">
+    <requires>
+      <import addon="game.libretro" version="1.0.0"/>
+    </requires>
+    <extension library_linux="bk_libretro.so" point="kodi.gameclient">
+      <platforms>BK-0010/BK-0011(M)</platforms>
+      <extensions>bin</extensions>
+      <supports_vfs>true</supports_vfs>
+      <supports_standalone>true</supports_standalone>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Elektronika - BK-0010/BK-0011(M)</summary>
+      <description lang="en_GB">Computer for BK-0010/BK-0011(M) by Eric A. Edwards, Leonid A. Broukhis, emestee, arcade-mini, phcoder[CR]Supported files: bin[CR][CR]Game Addon Notes: (!) bk/B11M_BOS.ROM (md5): fe4627d1e3a1535874085050733263e7|(!) bk/B11M_EXT.ROM (md5): dc52f365d56fa1951f5d35b1101b9e3f|(!) bk/BAS11M_0.ROM (md5): 946f6f23ded03c0e26187f0b3ca75993|(!) bk/BAS11M_1.ROM (md5): 1e6637f32aa7d1de03510030cac40bcf|(!) bk/BASIC10.ROM (md5): 3fa774326d75410a065659aea80252f0|(!) bk/DISK_327.ROM (md5): 5015228eeeb238e65da8edcd1b6dfac7|(!) bk/FOCAL10.ROM (md5): 5737f972e8638831ab71e9139abae052|(!) bk/MONIT10.ROM (md5): 95f8c41c6abf7640e35a6a03cecebd01</description>
+      <license>BSD</license>
+      <platform>all</platform>
+      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/bk_libretro.so.zip</source>
+      <news>Built from libretro buildbot commit 33d1a6fc (2020-03-11)</news>
+      <size>58300</size>
+      <path>linux_le_generic/game.libretro.bk_libretro_buildbot-1.2020.18332.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.blastem_libretro_buildbot" name="Sega - Mega Drive - Genesis (BlastEm)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
@@ -90,12 +111,12 @@
       <path>linux_le_generic/game.libretro.blastem_libretro_buildbot-1.2019.18231.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.bluemsx_libretro_buildbot" name="MSX/SVI/ColecoVision/SG-1000 (blueMSX)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.bluemsx_libretro_buildbot" name="MSX/SVI/ColecoVision/SG-1000 (blueMSX)" provider-name="http://buildbot.libretro.com/" version="1.2020.18329">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.msx.joystick"/>
-      <import addon="game.controller.msx.keyboard"/>
       <import addon="game.controller.colecovision"/>
+      <import addon="game.controller.msx.keyboard"/>
     </requires>
     <extension library_linux="bluemsx_libretro.so" point="kodi.gameclient">
       <platforms>MSX/SVI/ColecoVision/SG-1000</platforms>
@@ -109,9 +130,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/bluemsx_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 0c373e49 (2020-03-06)</news>
+      <news>Built from libretro buildbot commit a09c462b (2020-03-08)</news>
       <size>986644</size>
-      <path>linux_le_generic/game.libretro.bluemsx_libretro_buildbot-1.2020.18327.zip</path>
+      <path>linux_le_generic/game.libretro.bluemsx_libretro_buildbot-1.2020.18329.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.boom3_libretro_buildbot" name="Doom 3 (boom3)" provider-name="http://buildbot.libretro.com/" version="1.2020.18283">
@@ -412,12 +433,12 @@
       <path>linux_le_generic/game.libretro.cap32_libretro_buildbot-1.2019.18231.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.chailove_libretro_buildbot" name="ChaiLove" provider-name="http://buildbot.libretro.com/" version="1.2020.18264">
+  <addon id="game.libretro.chailove_libretro_buildbot" name="ChaiLove" provider-name="http://buildbot.libretro.com/" version="1.2020.18340">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
-      <import addon="game.controller.default"/>
       <import addon="game.controller.keyboard"/>
+      <import addon="game.controller.default"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="chailove_libretro.so" point="kodi.gameclient">
       <platforms>ChaiLove</platforms>
@@ -431,9 +452,9 @@
       <license>MIT</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/chailove_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 633a604c (2020-01-03)</news>
-      <size>1781783</size>
-      <path>linux_le_generic/game.libretro.chailove_libretro_buildbot-1.2020.18264.zip</path>
+      <news>Built from libretro buildbot commit 633a604c (2020-03-19)</news>
+      <size>1781785</size>
+      <path>linux_le_generic/game.libretro.chailove_libretro_buildbot-1.2020.18340.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.citra_canary_libretro_buildbot" name="Nintendo - 3DS (Citra Canary/Experimental)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
@@ -501,7 +522,7 @@
       <path>linux_le_generic/game.libretro.craft_libretro_buildbot-1.2019.18252.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.crocods_libretro_buildbot" name="Amstrad - CPC (CrocoDS)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.crocods_libretro_buildbot" name="Amstrad - CPC (CrocoDS)" provider-name="http://buildbot.libretro.com/" version="1.2020.18344">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -517,9 +538,9 @@
       <license>MIT</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/crocods_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 912bf647 (2019-12-01)</news>
-      <size>349502</size>
-      <path>linux_le_generic/game.libretro.crocods_libretro_buildbot-1.2019.18231.zip</path>
+      <news>Built from libretro buildbot commit e5bf0339 (2020-03-23)</news>
+      <size>484045</size>
+      <path>linux_le_generic/game.libretro.crocods_libretro_buildbot-1.2020.18344.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.daphne_libretro_buildbot" name="Arcade (Daphne)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
@@ -673,14 +694,35 @@
       <broken>Not yet compatible</broken>
     </extension>
   </addon>
-  <addon id="game.libretro.dosbox_svn_libretro_buildbot" name="DOS (DOSBox-SVN)" provider-name="http://buildbot.libretro.com/" version="1.2020.18314">
+  <addon id="game.libretro.dosbox_core_libretro_buildbot" name="DOS (DOSBox-core)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.gravis.gamepad"/>
+    </requires>
+    <extension library_linux="dosbox_core_libretro.so" point="kodi.gameclient">
+      <platforms>DOS</platforms>
+      <extensions>exe|com|bat|conf|cue|iso</extensions>
+      <supports_vfs>false</supports_vfs>
+      <supports_standalone>true</supports_standalone>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">DOS (DOSBox-core)</summary>
+      <description lang="en_GB">Emulator for DOS by DOSBox Team|radius|Nikos Chantziaras[CR]Supported files: exe|com|bat|conf|cue|iso[CR][CR]Game Addon Notes: (!) MT32_CONTROL.ROM (md5): 5626206284b22c2734f3e9efefcd2675|(!) MT32_PCM.ROM (md5): 89e42e386e82e0cacb4a2704a03706ca|(!) CM32L_CONTROL.ROM (md5): bfff32b6144c1d706109accb6e6b1113|(!) CM32L_PCM.ROM (md5): 08cdcfa0ed93e9cb16afa76e6ac5f0a4</description>
+      <license>GPLv2</license>
+      <platform>all</platform>
+      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/dosbox_core_libretro.so.zip</source>
+      <news>Built from libretro buildbot commit 69d28e8e (2020-03-28)</news>
+      <size>3056211</size>
+      <path>linux_le_generic/game.libretro.dosbox_core_libretro_buildbot-1.2020.18349.zip</path>
+    </extension>
+  </addon>
+  <addon id="game.libretro.dosbox_svn_libretro_buildbot" name="DOS (DOSBox-SVN)" provider-name="http://buildbot.libretro.com/" version="1.2020.18332">
+    <requires>
+      <import addon="game.libretro" version="1.0.0"/>
+      <import addon="game.controller.joystick.4button"/>
       <import addon="game.controller.mouse"/>
       <import addon="game.controller.joystick.2button"/>
       <import addon="game.controller.keyboard"/>
-      <import addon="game.controller.joystick.4button"/>
+      <import addon="game.controller.gravis.gamepad"/>
     </requires>
     <extension library_linux="dosbox_svn_libretro.so" point="kodi.gameclient">
       <platforms>DOS</platforms>
@@ -694,9 +736,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/dosbox_svn_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 10e9f240 (2020-02-22)</news>
-      <size>1253726</size>
-      <path>linux_le_generic/game.libretro.dosbox_svn_libretro_buildbot-1.2020.18314.zip</path>
+      <news>Built from libretro buildbot commit 93f96531 (2020-03-11)</news>
+      <size>1253757</size>
+      <path>linux_le_generic/game.libretro.dosbox_svn_libretro_buildbot-1.2020.18332.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.easyrpg_libretro_buildbot" name="RPG Maker 2000/2003 (EasyRPG)" provider-name="http://buildbot.libretro.com/" version="1.2020.18312">
@@ -720,7 +762,7 @@
       <path>linux_le_generic/game.libretro.easyrpg_libretro_buildbot-1.2020.18312.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.ecwolf_libretro_buildbot" name="Wolfenstein 3D (ECWolf)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.ecwolf_libretro_buildbot" name="Wolfenstein 3D (ECWolf)" provider-name="http://buildbot.libretro.com/" version="1.2020.18336">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.default"/>
@@ -737,9 +779,9 @@
       <license>BSD|LGPL</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/ecwolf_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 459e9196 (2020-03-06)</news>
-      <size>759819</size>
-      <path>linux_le_generic/game.libretro.ecwolf_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit a17ebf4f (2020-03-15)</news>
+      <size>775156</size>
+      <path>linux_le_generic/game.libretro.ecwolf_libretro_buildbot-1.2020.18336.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.emux_chip8_libretro_buildbot" name="CHIP-8 (Emux CHIP-8)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
@@ -938,7 +980,7 @@
       <path>linux_le_generic/game.libretro.fbalpha2012_neogeo_libretro_buildbot-1.2020.18301.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.fbneo_libretro_buildbot" name="Arcade (FinalBurn Neo)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.fbneo_libretro_buildbot" name="Arcade (FinalBurn Neo)" provider-name="http://buildbot.libretro.com/" version="1.2020.18347">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.default"/>
@@ -955,12 +997,12 @@
       <license>Non-commercial</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/fbneo_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit f79f87c0 (2020-03-06)</news>
-      <size>11152037</size>
-      <path>linux_le_generic/game.libretro.fbneo_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit 9281b83f (2020-03-26)</news>
+      <size>11182237</size>
+      <path>linux_le_generic/game.libretro.fbneo_libretro_buildbot-1.2020.18347.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.fceumm_libretro_buildbot" name="Nintendo - NES / Famicom (FCEUmm)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.fceumm_libretro_buildbot" name="Nintendo - NES / Famicom (FCEUmm)" provider-name="http://buildbot.libretro.com/" version="1.2020.18347">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.nes"/>
@@ -977,12 +1019,12 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/fceumm_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit eb6b9397 (2020-03-06)</news>
-      <size>469908</size>
-      <path>linux_le_generic/game.libretro.fceumm_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit 0c2b1ae0 (2020-03-26)</news>
+      <size>471608</size>
+      <path>linux_le_generic/game.libretro.fceumm_libretro_buildbot-1.2020.18347.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.flycast_libretro_buildbot" name="Sega - Dreamcast/NAOMI (Flycast)" provider-name="http://buildbot.libretro.com/" version="1.2020.18320">
+  <addon id="game.libretro.flycast_libretro_buildbot" name="Sega - Dreamcast/NAOMI (Flycast)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.dreamcast"/>
@@ -999,9 +1041,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/flycast_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit fc564fd2 (2020-02-28)</news>
-      <size>2965829</size>
-      <path>linux_le_generic/game.libretro.flycast_libretro_buildbot-1.2020.18320.zip</path>
+      <news>Built from libretro buildbot commit 7deba208 (2020-03-28)</news>
+      <size>2965232</size>
+      <path>linux_le_generic/game.libretro.flycast_libretro_buildbot-1.2020.18349.zip</path>
       <broken>Not yet compatible</broken>
     </extension>
   </addon>
@@ -1028,14 +1070,14 @@
       <path>linux_le_generic/game.libretro.fmsx_libretro_buildbot-1.2020.18269.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.freechaf_libretro_buildbot" name="Fairchild ChannelF (FreeChaF)" provider-name="http://buildbot.libretro.com/" version="1.2020.18272">
+  <addon id="game.libretro.freechaf_libretro_buildbot" name="Fairchild ChannelF (FreeChaF)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
     <extension library_linux="freechaf_libretro.so" point="kodi.gameclient">
       <platforms>FreeChaF</platforms>
       <extensions>bin</extensions>
-      <supports_vfs>false</supports_vfs>
+      <supports_vfs>true</supports_vfs>
       <supports_standalone>false</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -1044,9 +1086,9 @@
       <license>GPLv3</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/freechaf_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 27b20e38 (2020-01-11)</news>
-      <size>30614</size>
-      <path>linux_le_generic/game.libretro.freechaf_libretro_buildbot-1.2020.18272.zip</path>
+      <news>Built from libretro buildbot commit d6fd600b (2020-03-18)</news>
+      <size>38122</size>
+      <path>linux_le_generic/game.libretro.freechaf_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.freeintv_libretro_buildbot" name="Mattel - Intellivision (FreeIntv)" provider-name="http://buildbot.libretro.com/" version="1.2020.18271">
@@ -1115,7 +1157,7 @@
       <path>linux_le_generic/game.libretro.gambatte_libretro_buildbot-1.2020.18301.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.gearboy_libretro_buildbot" name="Nintendo - Game Boy / Color (Gearboy)" provider-name="http://buildbot.libretro.com/" version="1.2020.18271">
+  <addon id="game.libretro.gearboy_libretro_buildbot" name="Nintendo - Game Boy / Color (Gearboy)" provider-name="http://buildbot.libretro.com/" version="1.2020.18340">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -1131,9 +1173,9 @@
       <license>GPLv3</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/gearboy_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit f3add14a (2020-01-10)</news>
-      <size>343883</size>
-      <path>linux_le_generic/game.libretro.gearboy_libretro_buildbot-1.2020.18271.zip</path>
+      <news>Built from libretro buildbot commit 83068286 (2020-03-19)</news>
+      <size>342925</size>
+      <path>linux_le_generic/game.libretro.gearboy_libretro_buildbot-1.2020.18340.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.gearsystem_libretro_buildbot" name="Sega - MS/GG/SG-1000 (Gearsystem)" provider-name="http://buildbot.libretro.com/" version="1.2020.18271">
@@ -1180,7 +1222,7 @@
       <path>linux_le_generic/game.libretro.genesis_plus_gx_libretro_buildbot-1.2020.18302.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.gme_libretro_buildbot" name="Game Music Emu" provider-name="http://buildbot.libretro.com/" version="1.2020.18269">
+  <addon id="game.libretro.gme_libretro_buildbot" name="Game Music Emu" provider-name="http://buildbot.libretro.com/" version="1.2020.18337">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -1196,12 +1238,12 @@
       <license>GPLv3</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/gme_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 0eb661e2 (2020-01-08)</news>
+      <news>Built from libretro buildbot commit 0eb661e2 (2020-03-16)</news>
       <size>620457</size>
-      <path>linux_le_generic/game.libretro.gme_libretro_buildbot-1.2020.18269.zip</path>
+      <path>linux_le_generic/game.libretro.gme_libretro_buildbot-1.2020.18337.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.gpsp_libretro_buildbot" name="Nintendo - Game Boy Advance (gpSP)" provider-name="http://buildbot.libretro.com/" version="1.2020.18323">
+  <addon id="game.libretro.gpsp_libretro_buildbot" name="Nintendo - Game Boy Advance (gpSP)" provider-name="http://buildbot.libretro.com/" version="1.2020.18332">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -1217,9 +1259,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/gpsp_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit de1025a2 (2020-03-02)</news>
-      <size>428384</size>
-      <path>linux_le_generic/game.libretro.gpsp_libretro_buildbot-1.2020.18323.zip</path>
+      <news>Built from libretro buildbot commit 8651db5b (2020-03-11)</news>
+      <size>428565</size>
+      <path>linux_le_generic/game.libretro.gpsp_libretro_buildbot-1.2020.18332.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.gw_libretro_buildbot" name="Handheld Electronic (GW)" provider-name="http://buildbot.libretro.com/" version="1.2020.18263">
@@ -1243,7 +1285,7 @@
       <path>linux_le_generic/game.libretro.gw_libretro_buildbot-1.2020.18263.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.handy_libretro_buildbot" name="Atari - Lynx (Handy)" provider-name="http://buildbot.libretro.com/" version="1.2020.18307">
+  <addon id="game.libretro.handy_libretro_buildbot" name="Atari - Lynx (Handy)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.atari.lynx"/>
@@ -1260,17 +1302,17 @@
       <license>Zlib</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/handy_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 0bc46e03 (2020-02-15)</news>
-      <size>378608</size>
-      <path>linux_le_generic/game.libretro.handy_libretro_buildbot-1.2020.18307.zip</path>
+      <news>Built from libretro buildbot commit e2703a26 (2020-03-18)</news>
+      <size>381622</size>
+      <path>linux_le_generic/game.libretro.handy_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.hatari_libretro_buildbot" name="Atari - ST/STE/TT/Falcon (Hatari)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.hatari_libretro_buildbot" name="Atari - ST/STE/TT/Falcon (Hatari)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
       <import addon="game.controller.keyboard"/>
       <import addon="game.controller.atari.2600"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="hatari_libretro.so" point="kodi.gameclient">
       <platforms>Atari ST/STE/TT/Falcon</platforms>
@@ -1284,9 +1326,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/hatari_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit e357488a (2019-12-01)</news>
-      <size>1275026</size>
-      <path>linux_le_generic/game.libretro.hatari_libretro_buildbot-1.2019.18231.zip</path>
+      <news>Built from libretro buildbot commit ef67fa61 (2020-03-18)</news>
+      <size>1275031</size>
+      <path>linux_le_generic/game.libretro.hatari_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.higan_sfc_balanced_libretro_buildbot" name="Nintendo - SNES / Famicom (nSide Balanced)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
@@ -1375,7 +1417,7 @@
       <broken>Not yet compatible</broken>
     </extension>
   </addon>
-  <addon id="game.libretro.lutro_libretro_buildbot" name="Lua Engine (Lutro)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.lutro_libretro_buildbot" name="Lua Engine (Lutro)" provider-name="http://buildbot.libretro.com/" version="1.2020.18338">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -1391,9 +1433,9 @@
       <license>MIT</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/lutro_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit a35493a0 (2019-12-01)</news>
-      <size>636844</size>
-      <path>linux_le_generic/game.libretro.lutro_libretro_buildbot-1.2019.18231.zip</path>
+      <news>Built from libretro buildbot commit 173641b0 (2020-03-17)</news>
+      <size>638277</size>
+      <path>linux_le_generic/game.libretro.lutro_libretro_buildbot-1.2020.18338.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.mame2000_libretro_buildbot" name="Arcade (MAME 2000)" provider-name="http://buildbot.libretro.com/" version="1.2020.18274">
@@ -1480,7 +1522,7 @@
       <path>linux_le_generic/game.libretro.mame2010_libretro_buildbot-1.2019.18231.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.mame2015_libretro_buildbot" name="Arcade (MAME 2015)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.mame2015_libretro_buildbot" name="Arcade (MAME 2015)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -1496,9 +1538,9 @@
       <license>MAME</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mame2015_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit bd3cb673 (2019-12-01)</news>
-      <size>31824837</size>
-      <path>linux_le_generic/game.libretro.mame2015_libretro_buildbot-1.2019.18231.zip</path>
+      <news>Built from libretro buildbot commit 5bd8bcb2 (2020-03-18)</news>
+      <size>31824744</size>
+      <path>linux_le_generic/game.libretro.mame2015_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.mame2016_libretro_buildbot" name="Arcade (MAME 2016)" provider-name="http://buildbot.libretro.com/" version="1.2020.18301">
@@ -1611,7 +1653,7 @@
       <path>linux_le_generic/game.libretro.mednafen_ngp_libretro_buildbot-1.2020.18293.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.mednafen_pce_fast_libretro_buildbot" name="NEC - PC Engine / CD (Beetle PCE FAST)" provider-name="http://buildbot.libretro.com/" version="1.2020.18293">
+  <addon id="game.libretro.mednafen_pce_fast_libretro_buildbot" name="NEC - PC Engine / CD (Beetle PCE FAST)" provider-name="http://buildbot.libretro.com/" version="1.2020.18341">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.pce"/>
@@ -1628,12 +1670,12 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_pce_fast_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit a29e728d (2020-02-01)</news>
-      <size>590452</size>
-      <path>linux_le_generic/game.libretro.mednafen_pce_fast_libretro_buildbot-1.2020.18293.zip</path>
+      <news>Built from libretro buildbot commit 795bea7c (2020-03-20)</news>
+      <size>590467</size>
+      <path>linux_le_generic/game.libretro.mednafen_pce_fast_libretro_buildbot-1.2020.18341.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.mednafen_pce_libretro_buildbot" name="NEC - PC Engine / SuperGrafx / CD (Beetle PCE)" provider-name="http://buildbot.libretro.com/" version="1.2020.18283">
+  <addon id="game.libretro.mednafen_pce_libretro_buildbot" name="NEC - PC Engine / SuperGrafx / CD (Beetle PCE)" provider-name="http://buildbot.libretro.com/" version="1.2020.18341">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.pce"/>
@@ -1650,9 +1692,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_pce_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit f6cfdacd (2020-01-22)</news>
-      <size>693911</size>
-      <path>linux_le_generic/game.libretro.mednafen_pce_libretro_buildbot-1.2020.18283.zip</path>
+      <news>Built from libretro buildbot commit 59490f96 (2020-03-20)</news>
+      <size>693916</size>
+      <path>linux_le_generic/game.libretro.mednafen_pce_libretro_buildbot-1.2020.18341.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.mednafen_pcfx_libretro_buildbot" name="NEC - PC-FX (Beetle PC-FX)" provider-name="http://buildbot.libretro.com/" version="1.2020.18271">
@@ -1678,7 +1720,7 @@
       <path>linux_le_generic/game.libretro.mednafen_pcfx_libretro_buildbot-1.2020.18271.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.mednafen_psx_hw_libretro_buildbot" name="Sony - PlayStation (Beetle PSX HW)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.mednafen_psx_hw_libretro_buildbot" name="Sony - PlayStation (Beetle PSX HW)" provider-name="http://buildbot.libretro.com/" version="1.2020.18347">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -1694,22 +1736,22 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_psx_hw_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 2be6fd62 (2020-03-06)</news>
-      <size>2374011</size>
-      <path>linux_le_generic/game.libretro.mednafen_psx_hw_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit 173ea57d (2020-03-26)</news>
+      <size>2374718</size>
+      <path>linux_le_generic/game.libretro.mednafen_psx_hw_libretro_buildbot-1.2020.18347.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.mednafen_psx_libretro_buildbot" name="Sony - PlayStation (Beetle PSX)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.mednafen_psx_libretro_buildbot" name="Sony - PlayStation (Beetle PSX)" provider-name="http://buildbot.libretro.com/" version="1.2020.18347">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.ps.dualshock"/>
-      <import addon="game.controller.konami.justifier.player2"/>
-      <import addon="game.controller.ps.gamepad"/>
-      <import addon="game.controller.ps.guncon.japan"/>
-      <import addon="game.controller.konami.justifier.ps"/>
-      <import addon="game.controller.ps.mouse"/>
       <import addon="game.controller.ps.dualanalog"/>
+      <import addon="game.controller.konami.justifier.ps"/>
+      <import addon="game.controller.ps.guncon.japan"/>
       <import addon="game.controller.ps.guncon.western"/>
+      <import addon="game.controller.konami.justifier.player2"/>
+      <import addon="game.controller.ps.mouse"/>
+      <import addon="game.controller.ps.dualshock"/>
+      <import addon="game.controller.ps.gamepad"/>
     </requires>
     <extension library_linux="mednafen_psx_libretro.so" point="kodi.gameclient">
       <platforms>PlayStation</platforms>
@@ -1723,9 +1765,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mednafen_psx_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit ba63185a (2020-03-06)</news>
-      <size>1874150</size>
-      <path>linux_le_generic/game.libretro.mednafen_psx_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit 70f8185d (2020-03-26)</news>
+      <size>1874509</size>
+      <path>linux_le_generic/game.libretro.mednafen_psx_libretro_buildbot-1.2020.18347.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.mednafen_saturn_libretro_buildbot" name="Sega - Saturn (Beetle Saturn)" provider-name="http://buildbot.libretro.com/" version="1.2020.18286">
@@ -1867,7 +1909,7 @@
       <path>linux_le_generic/game.libretro.melonds_libretro_buildbot-1.2019.18231.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.mesen-s_libretro_buildbot" name="Nintendo - SNES / SFC (Mesen-S)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.mesen-s_libretro_buildbot" name="Nintendo - SNES / SFC (Mesen-S)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -1883,9 +1925,9 @@
       <license>GPLv3</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mesen-s_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit c5dfca27 (2020-03-05)</news>
-      <size>1286439</size>
-      <path>linux_le_generic/game.libretro.mesen-s_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit 736a0cfc (2020-03-28)</news>
+      <size>1286395</size>
+      <path>linux_le_generic/game.libretro.mesen-s_libretro_buildbot-1.2020.18349.zip</path>
       <broken>Not yet compatible</broken>
     </extension>
   </addon>
@@ -1911,7 +1953,7 @@
       <broken>Not yet compatible</broken>
     </extension>
   </addon>
-  <addon id="game.libretro.mess2015_libretro_buildbot" name="Multi (MESS 2015)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.mess2015_libretro_buildbot" name="Multi (MESS 2015)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -1927,9 +1969,9 @@
       <license>MAME</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mess2015_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 4c5e990f (2019-12-01)</news>
-      <size>16296863</size>
-      <path>linux_le_generic/game.libretro.mess2015_libretro_buildbot-1.2019.18231.zip</path>
+      <news>Built from libretro buildbot commit 3685ea56 (2020-03-18)</news>
+      <size>16297193</size>
+      <path>linux_le_generic/game.libretro.mess2015_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.meteor_libretro_buildbot" name="Nintendo - Game Boy Advance (Meteor)" provider-name="http://buildbot.libretro.com/" version="1.2019.18210">
@@ -1976,7 +2018,7 @@
       <path>linux_le_generic/game.libretro.mgba_libretro_buildbot-1.2020.18323.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.mrboom_libretro_buildbot" name="Mr.Boom (Bomberman)" provider-name="http://buildbot.libretro.com/" version="1.2020.18272">
+  <addon id="game.libretro.mrboom_libretro_buildbot" name="Mr.Boom (Bomberman)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.default"/>
@@ -1993,12 +2035,12 @@
       <license/>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mrboom_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 1769b9e9 (2020-01-11)</news>
-      <size>3311289</size>
-      <path>linux_le_generic/game.libretro.mrboom_libretro_buildbot-1.2020.18272.zip</path>
+      <news>Built from libretro buildbot commit 4de73383 (2020-03-28)</news>
+      <size>3311273</size>
+      <path>linux_le_generic/game.libretro.mrboom_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.mu_libretro_buildbot" name="Palm OS (Mu)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.mu_libretro_buildbot" name="Palm OS (Mu)" provider-name="http://buildbot.libretro.com/" version="1.2020.18335">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2014,9 +2056,9 @@
       <license>Non-commercial</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/mu_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 5eaf4b8f (2019-12-01)</news>
-      <size>234890</size>
-      <path>linux_le_generic/game.libretro.mu_libretro_buildbot-1.2019.18231.zip</path>
+      <news>Built from libretro buildbot commit 5eaf4b8f (2020-03-14)</news>
+      <size>234893</size>
+      <path>linux_le_generic/game.libretro.mu_libretro_buildbot-1.2020.18335.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.mupen64plus_next_libretro_buildbot" name="Nintendo - Nintendo 64 (Mupen64Plus-Next)" provider-name="http://buildbot.libretro.com/" version="1.2020.18321">
@@ -2040,7 +2082,7 @@
       <path>linux_le_generic/game.libretro.mupen64plus_next_libretro_buildbot-1.2020.18321.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.nekop2_libretro_buildbot" name="NEC - PC-98 (Neko Project II)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.nekop2_libretro_buildbot" name="NEC - PC-98 (Neko Project II)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2056,9 +2098,9 @@
       <license/>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/nekop2_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 106198fc (2019-12-01)</news>
-      <size>706651</size>
-      <path>linux_le_generic/game.libretro.nekop2_libretro_buildbot-1.2019.18231.zip</path>
+      <news>Built from libretro buildbot commit 106198fc (2020-03-18)</news>
+      <size>706643</size>
+      <path>linux_le_generic/game.libretro.nekop2_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.neocd_libretro_buildbot" name="SNK - Neo Geo CD (NeoCD)" provider-name="http://buildbot.libretro.com/" version="1.2020.18293">
@@ -2105,7 +2147,7 @@
       <path>linux_le_generic/game.libretro.nestopia_libretro_buildbot-1.2020.18285.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.np2kai_libretro_buildbot" name="NEC - PC-98 (Neko Project II Kai)" provider-name="http://buildbot.libretro.com/" version="1.2020.18325">
+  <addon id="game.libretro.np2kai_libretro_buildbot" name="NEC - PC-98 (Neko Project II Kai)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2121,9 +2163,9 @@
       <license>MIT</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/np2kai_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 005fabf0 (2020-03-04)</news>
-      <size>1027126</size>
-      <path>linux_le_generic/game.libretro.np2kai_libretro_buildbot-1.2020.18325.zip</path>
+      <news>Built from libretro buildbot commit 4c809acf (2020-03-18)</news>
+      <size>1027070</size>
+      <path>linux_le_generic/game.libretro.np2kai_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.nxengine_libretro_buildbot" name="Cave Story (NXEngine)" provider-name="http://buildbot.libretro.com/" version="1.2020.18271">
@@ -2214,7 +2256,7 @@
       <path>linux_le_generic/game.libretro.opera_libretro_buildbot-1.2020.18311.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.parallel_n64_libretro_buildbot" name="Nintendo - Nintendo 64 (ParaLLEl N64)" provider-name="http://buildbot.libretro.com/" version="1.2020.18323">
+  <addon id="game.libretro.parallel_n64_libretro_buildbot" name="Nintendo - Nintendo 64 (ParaLLEl N64)" provider-name="http://buildbot.libretro.com/" version="1.2020.18328">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.n64"/>
@@ -2231,13 +2273,13 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/parallel_n64_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 3b5f23e4 (2020-03-02)</news>
-      <size>1111657</size>
-      <path>linux_le_generic/game.libretro.parallel_n64_libretro_buildbot-1.2020.18323.zip</path>
+      <news>Built from libretro buildbot commit d6279795 (2020-03-07)</news>
+      <size>1111480</size>
+      <path>linux_le_generic/game.libretro.parallel_n64_libretro_buildbot-1.2020.18328.zip</path>
       <broken>Not yet compatible</broken>
     </extension>
   </addon>
-  <addon id="game.libretro.pcsx_rearmed_libretro_buildbot" name="Sony - PlayStation (PCSX ReARMed)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.pcsx_rearmed_libretro_buildbot" name="Sony - PlayStation (PCSX ReARMed)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.ps.dualshock"/>
@@ -2256,12 +2298,12 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/pcsx_rearmed_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit e44c9b8b (2020-03-05)</news>
-      <size>844311</size>
-      <path>linux_le_generic/game.libretro.pcsx_rearmed_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit 69290e02 (2020-03-18)</news>
+      <size>844305</size>
+      <path>linux_le_generic/game.libretro.pcsx_rearmed_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.picodrive_libretro_buildbot" name="Sega - MS/MD/CD/32X (PicoDrive)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.picodrive_libretro_buildbot" name="Sega - MS/MD/CD/32X (PicoDrive)" provider-name="http://buildbot.libretro.com/" version="1.2020.18328">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.genesis.6button"/>
@@ -2278,12 +2320,12 @@
       <license>MAME</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/picodrive_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 737e34ae (2020-03-06)</news>
+      <news>Built from libretro buildbot commit 737e34ae (2020-03-07)</news>
       <size>574665</size>
-      <path>linux_le_generic/game.libretro.picodrive_libretro_buildbot-1.2020.18327.zip</path>
+      <path>linux_le_generic/game.libretro.picodrive_libretro_buildbot-1.2020.18328.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.play_libretro_buildbot" name="Sony - PlayStation 2 (Play!)" provider-name="http://buildbot.libretro.com/" version="1.2020.18321">
+  <addon id="game.libretro.play_libretro_buildbot" name="Sony - PlayStation 2 (Play!)" provider-name="http://buildbot.libretro.com/" version="1.2020.18338">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2299,13 +2341,13 @@
       <license>MIT</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/play_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit d2678f06 (2020-02-29)</news>
-      <size>1298440</size>
-      <path>linux_le_generic/game.libretro.play_libretro_buildbot-1.2020.18321.zip</path>
+      <news>Built from libretro buildbot commit 54407595 (2020-03-17)</news>
+      <size>1816453</size>
+      <path>linux_le_generic/game.libretro.play_libretro_buildbot-1.2020.18338.zip</path>
       <broken>Not yet compatible</broken>
     </extension>
   </addon>
-  <addon id="game.libretro.pocketcdg_libretro_buildbot" name="PocketCDG" provider-name="http://buildbot.libretro.com/" version="1.2020.18269">
+  <addon id="game.libretro.pocketcdg_libretro_buildbot" name="PocketCDG" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2321,9 +2363,9 @@
       <license>MIT</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/pocketcdg_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 4ea5f9c5 (2020-01-08)</news>
-      <size>233798</size>
-      <path>linux_le_generic/game.libretro.pocketcdg_libretro_buildbot-1.2020.18269.zip</path>
+      <news>Built from libretro buildbot commit a4edb1e1 (2020-03-18)</news>
+      <size>233747</size>
+      <path>linux_le_generic/game.libretro.pocketcdg_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.pokemini_libretro_buildbot" name="Nintendo - Pokemon Mini (PokeMini)" provider-name="http://buildbot.libretro.com/" version="1.2020.18301">
@@ -2348,7 +2390,7 @@
       <path>linux_le_generic/game.libretro.pokemini_libretro_buildbot-1.2020.18301.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.ppsspp_libretro_buildbot" name="Sony - PlayStation Portable (PPSSPP)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.ppsspp_libretro_buildbot" name="Sony - PlayStation Portable (PPSSPP)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.psp"/>
@@ -2365,18 +2407,18 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/ppsspp_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 7437ccee (2020-03-06)</news>
-      <size>5792999</size>
-      <path>linux_le_generic/game.libretro.ppsspp_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit e232091b (2020-03-28)</news>
+      <size>5820441</size>
+      <path>linux_le_generic/game.libretro.ppsspp_libretro_buildbot-1.2020.18349.zip</path>
       <broken>Not yet compatible</broken>
     </extension>
   </addon>
-  <addon id="game.libretro.prboom_libretro_buildbot" name="Doom (PrBoom)" provider-name="http://buildbot.libretro.com/" version="1.2020.18322">
+  <addon id="game.libretro.prboom_libretro_buildbot" name="Doom (PrBoom)" provider-name="http://buildbot.libretro.com/" version="1.2020.18338">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
-      <import addon="game.controller.default"/>
       <import addon="game.controller.keyboard"/>
+      <import addon="game.controller.default"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="prboom_libretro.so" point="kodi.gameclient">
       <platforms>DOOM Game Engine</platforms>
@@ -2390,9 +2432,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/prboom_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 9a0cc781 (2020-03-01)</news>
+      <news>Built from libretro buildbot commit ec51cffd (2020-03-17)</news>
       <size>739198</size>
-      <path>linux_le_generic/game.libretro.prboom_libretro_buildbot-1.2020.18322.zip</path>
+      <path>linux_le_generic/game.libretro.prboom_libretro_buildbot-1.2020.18338.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.prosystem_libretro_buildbot" name="Atari - 7800 (ProSystem)" provider-name="http://buildbot.libretro.com/" version="1.2020.18269">
@@ -2418,12 +2460,12 @@
       <path>linux_le_generic/game.libretro.prosystem_libretro_buildbot-1.2020.18269.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.puae_libretro_buildbot" name="Commodore - Amiga (P-UAE)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.puae_libretro_buildbot" name="Commodore - Amiga (P-UAE)" provider-name="http://buildbot.libretro.com/" version="1.2020.18343">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
-      <import addon="game.controller.default"/>
       <import addon="game.controller.keyboard"/>
+      <import addon="game.controller.default"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="puae_libretro.so" point="kodi.gameclient">
       <platforms>Commodore Amiga</platforms>
@@ -2437,12 +2479,12 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/puae_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit a9ac8cac (2020-03-06)</news>
-      <size>4129322</size>
-      <path>linux_le_generic/game.libretro.puae_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit d0e9fbc2 (2020-03-22)</news>
+      <size>4317127</size>
+      <path>linux_le_generic/game.libretro.puae_libretro_buildbot-1.2020.18343.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.px68k_libretro_buildbot" name="Sharp - X68000 (PX68k)" provider-name="http://buildbot.libretro.com/" version="1.2020.18295">
+  <addon id="game.libretro.px68k_libretro_buildbot" name="Sharp - X68000 (PX68k)" provider-name="http://buildbot.libretro.com/" version="1.2020.18332">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2458,12 +2500,12 @@
       <license/>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/px68k_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 4ff55fbc (2020-02-03)</news>
-      <size>394700</size>
-      <path>linux_le_generic/game.libretro.px68k_libretro_buildbot-1.2020.18295.zip</path>
+      <news>Built from libretro buildbot commit 8775ac6f (2020-03-11)</news>
+      <size>394752</size>
+      <path>linux_le_generic/game.libretro.px68k_libretro_buildbot-1.2020.18332.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.quasi88_libretro_buildbot" name="NEC - PC-8000 / PC-8800 series (QUASI88)" provider-name="http://buildbot.libretro.com/" version="1.2020.18323">
+  <addon id="game.libretro.quasi88_libretro_buildbot" name="NEC - PC-8000 / PC-8800 series (QUASI88)" provider-name="http://buildbot.libretro.com/" version="1.2020.18331">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2479,9 +2521,9 @@
       <license>BSD 3-Clause</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/quasi88_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit e44af081 (2020-03-02)</news>
-      <size>491906</size>
-      <path>linux_le_generic/game.libretro.quasi88_libretro_buildbot-1.2020.18323.zip</path>
+      <news>Built from libretro buildbot commit 379a46cb (2020-03-10)</news>
+      <size>491926</size>
+      <path>linux_le_generic/game.libretro.quasi88_libretro_buildbot-1.2020.18331.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.quicknes_libretro_buildbot" name="Nintendo - NES / Famicom (QuickNES)" provider-name="http://buildbot.libretro.com/" version="1.2020.18269">
@@ -2591,28 +2633,28 @@
       <path>linux_le_generic/game.libretro.sameboy_libretro_buildbot-1.2020.18286.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.scummvm_libretro_buildbot" name="ScummVM" provider-name="http://buildbot.libretro.com/" version="1.2020.18323">
+  <addon id="game.libretro.scummvm_libretro_buildbot" name="ScummVM" provider-name="http://buildbot.libretro.com/" version="1.2020.18338">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
-      <import addon="game.controller.default"/>
       <import addon="game.controller.keyboard"/>
+      <import addon="game.controller.default"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="scummvm_libretro.so" point="kodi.gameclient">
       <platforms>Game engine</platforms>
-      <extensions>scummvm</extensions>
+      <extensions>0|1|2|3|5|6|8|16|25|99|101|102|418|455|512|scummvm|scumm|gam|z5|dat|blb|z6|RAW|ROM|taf|zblorb|dcp|(a)|cup|HE0|(A)|D$$|STK|z8|hex|VMD|TGA|ITK|SCN|INF|pic|Z5|z3|blorb|ulx|DAT|cas|PIC|acd|006|SYS|alr|t3|gblorb|tab|AP|CRC|EXE|z4|W32|MAC|mac|WIN|001|003|000|bin|exe|asl|AVD|INI|SND|cat|ANG|CUP|SYS16|img|LB|TLK|MIX|VQA|RLB|FNT|win|HE1|DMU|FON|SCR|TEX|HEP|DIR|DRV|MAP|a3c|GRV|CUR|OPT|gfx|ASK|LNG|ini|RSC|SPP|CC|BND|LA0|TRS|add|HRS|DFW|DR1|ALD|004|002|005|R02|R00|C00|D00|GAM|IDX|ogg|TXT|GRA|BMV|H$$|MSG|VGA|PKD|OUT|99 (PG)|SAV|PAK|BIN|CPS|SHP|DXR|dxr|gmp|SNG|C35|C06|WAV|SMK|wav|CAB|game|Z6|(b)|slg|he2|he1|HE2|SYN|PAT|NUT|nl|PRC|V56|SEQ|P56|AUD|FKR|EX1|rom|LIC|$00|ALL|LTK|txt|acx|VXD|ACX|mpc|msd|ADF|nib|HELLO|dsk|xfd|woz|d$$|SET|SOL|Pat|CFG|BSF|RES|IMD|LFL|SQU|rsc|BBM|2 US|OVL|OVR|007|PNT|pat|CHK|MDT|EMC|ADV|FDT|GMC|FMC|info|HPF|hpf|INE|RBT|CSC|HEB|MID|lfl|LEC|HNM|QA|009|PRF|EGA|MHK|d64|prg|LZC|flac|IMS|REC|MOR|doc|HAG|AGA|BLB|TABLE|PAL|PRG|CLG|ORB|BRO|bro|PH1|DEF|IN|jpg|TOC|j2|Text|CEL|he0|AVI|1C|1c|BAK|L9|CGA|HRC|mhk|RED|SM0|SM1|SOU|RRM|LIB| Seuss's  ABC|CNV|VOC|OGG|GME|GERMAN|SHR|FRENCH|DNR|DSK|dnr|CAT|V16|cab|CLU|b25c|RL|mp3|FRM|SOG|HEX|mma|st|MPC|IMG|ENC|SPR|AD|C|CON|PGM|Z|RL2|MMM|OBJ|ZFS|zfs|STR|z2|z1</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>true</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">ScummVM</summary>
-      <description lang="en_GB">Game for Game engine by SCUMMVMdev[CR]Supported files: scummvm</description>
+      <description lang="en_GB">Game for Game engine by SCUMMVMdev[CR]Supported files: 0|1|2|3|5|6|8|16|25|99|101|102|418|455|512|scummvm|scumm|gam|z5|dat|blb|z6|RAW|ROM|taf|zblorb|dcp|(a)|cup|HE0|(A)|D$$|STK|z8|hex|VMD|TGA|ITK|SCN|INF|pic|Z5|z3|blorb|ulx|DAT|cas|PIC|acd|006|SYS|alr|t3|gblorb|tab|AP|CRC|EXE|z4|W32|MAC|mac|WIN|001|003|000|bin|exe|asl|AVD|INI|SND|cat|ANG|CUP|SYS16|img|LB|TLK|MIX|VQA|RLB|FNT|win|HE1|DMU|FON|SCR|TEX|HEP|DIR|DRV|MAP|a3c|GRV|CUR|OPT|gfx|ASK|LNG|ini|RSC|SPP|CC|BND|LA0|TRS|add|HRS|DFW|DR1|ALD|004|002|005|R02|R00|C00|D00|GAM|IDX|ogg|TXT|GRA|BMV|H$$|MSG|VGA|PKD|OUT|99 (PG)|SAV|PAK|BIN|CPS|SHP|DXR|dxr|gmp|SNG|C35|C06|WAV|SMK|wav|CAB|game|Z6|(b)|slg|he2|he1|HE2|SYN|PAT|NUT|nl|PRC|V56|SEQ|P56|AUD|FKR|EX1|rom|LIC|$00|ALL|LTK|txt|acx|VXD|ACX|mpc|msd|ADF|nib|HELLO|dsk|xfd|woz|d$$|SET|SOL|Pat|CFG|BSF|RES|IMD|LFL|SQU|rsc|BBM|2 US|OVL|OVR|007|PNT|pat|CHK|MDT|EMC|ADV|FDT|GMC|FMC|info|HPF|hpf|INE|RBT|CSC|HEB|MID|lfl|LEC|HNM|QA|009|PRF|EGA|MHK|d64|prg|LZC|flac|IMS|REC|MOR|doc|HAG|AGA|BLB|TABLE|PAL|PRG|CLG|ORB|BRO|bro|PH1|DEF|IN|jpg|TOC|j2|Text|CEL|he0|AVI|1C|1c|BAK|L9|CGA|HRC|mhk|RED|SM0|SM1|SOU|RRM|LIB| Seuss's  ABC|CNV|VOC|OGG|GME|GERMAN|SHR|FRENCH|DNR|DSK|dnr|CAT|V16|cab|CLU|b25c|RL|mp3|FRM|SOG|HEX|mma|st|MPC|IMG|ENC|SPR|AD|C|CON|PGM|Z|RL2|MMM|OBJ|ZFS|zfs|STR|z2|z1[CR][CR]Game Addon Notes: Auxiliary files available from https://docs.libretro.com/library/scummvm/#usage</description>
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/scummvm_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 731183ff (2020-03-02)</news>
-      <size>21227697</size>
-      <path>linux_le_generic/game.libretro.scummvm_libretro_buildbot-1.2020.18323.zip</path>
+      <news>Built from libretro buildbot commit 5c3a725c (2020-03-17)</news>
+      <size>21228631</size>
+      <path>linux_le_generic/game.libretro.scummvm_libretro_buildbot-1.2020.18338.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.smsplus_libretro_buildbot" name="Sega - MS/GG (SMS Plus GX)" provider-name="http://buildbot.libretro.com/" version="1.2020.18289">
@@ -2761,7 +2803,7 @@
       <path>linux_le_generic/game.libretro.snes9x_libretro_buildbot-1.2020.18269.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.squirreljme_libretro_buildbot" name="Java ME (SquirrelJME)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.squirreljme_libretro_buildbot" name="Java ME (SquirrelJME)" provider-name="http://buildbot.libretro.com/" version="1.2020.18345">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2777,9 +2819,9 @@
       <license>GPLv3</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/squirreljme_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 1690a408 (2020-03-05)</news>
-      <size>431480</size>
-      <path>linux_le_generic/game.libretro.squirreljme_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit 1690a408 (2020-03-24)</news>
+      <size>431481</size>
+      <path>linux_le_generic/game.libretro.squirreljme_libretro_buildbot-1.2020.18345.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.stella2014_libretro_buildbot" name="Atari - 2600 (Stella 2014)" provider-name="http://buildbot.libretro.com/" version="1.2020.18269">
@@ -2804,7 +2846,7 @@
       <path>linux_le_generic/game.libretro.stella2014_libretro_buildbot-1.2020.18269.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.stella_libretro_buildbot" name="Atari - 2600 (Stella)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.stella_libretro_buildbot" name="Atari - 2600 (Stella)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.atari.2600"/>
@@ -2821,9 +2863,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/stella_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit b034b188 (2020-03-06)</news>
-      <size>1101798</size>
-      <path>linux_le_generic/game.libretro.stella_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit b0edc5d6 (2020-03-28)</news>
+      <size>1114695</size>
+      <path>linux_le_generic/game.libretro.stella_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.tgbdual_libretro_buildbot" name="Nintendo - Game Boy / Color (TGB Dual)" provider-name="http://buildbot.libretro.com/" version="1.2020.18270">
@@ -2848,7 +2890,7 @@
       <path>linux_le_generic/game.libretro.tgbdual_libretro_buildbot-1.2020.18270.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.theodore_libretro_buildbot" name="Thomson - MO/TO (Theodore)" provider-name="http://buildbot.libretro.com/" version="1.2020.18291">
+  <addon id="game.libretro.theodore_libretro_buildbot" name="Thomson - MO/TO (Theodore)" provider-name="http://buildbot.libretro.com/" version="1.2020.18343">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2864,12 +2906,12 @@
       <license>GPLv3</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/theodore_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 0d17d22d (2020-01-30)</news>
-      <size>500011</size>
-      <path>linux_le_generic/game.libretro.theodore_libretro_buildbot-1.2020.18291.zip</path>
+      <news>Built from libretro buildbot commit 2cce17dc (2020-03-22)</news>
+      <size>546931</size>
+      <path>linux_le_generic/game.libretro.theodore_libretro_buildbot-1.2020.18343.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.thepowdertoy_libretro_buildbot" name="The Powder Toy" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.thepowdertoy_libretro_buildbot" name="The Powder Toy" provider-name="http://buildbot.libretro.com/" version="1.2020.18347">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2885,12 +2927,12 @@
       <license>GPLv3</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/thepowdertoy_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 4618bd2a (2019-12-01)</news>
+      <news>Built from libretro buildbot commit 4618bd2a (2020-03-26)</news>
       <size>1565589</size>
-      <path>linux_le_generic/game.libretro.thepowdertoy_libretro_buildbot-1.2019.18231.zip</path>
+      <path>linux_le_generic/game.libretro.thepowdertoy_libretro_buildbot-1.2020.18347.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.tic80_libretro_buildbot" name="TIC-80" provider-name="http://buildbot.libretro.com/" version="1.2020.18321">
+  <addon id="game.libretro.tic80_libretro_buildbot" name="TIC-80" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2902,13 +2944,13 @@
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">TIC-80</summary>
-      <description lang="en_GB">Game engine for TIC-80 by Nesbox, Rob Loach[CR]Supported files: tic</description>
+      <description lang="en_GB">Game engine for TIC-80 by Nesbox|RobLoach[CR]Supported files: tic</description>
       <license>MIT</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/tic80_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 9d7e1534 (2020-02-29)</news>
-      <size>615346</size>
-      <path>linux_le_generic/game.libretro.tic80_libretro_buildbot-1.2020.18321.zip</path>
+      <news>Built from libretro buildbot commit 50e20717 (2020-03-28)</news>
+      <size>621977</size>
+      <path>linux_le_generic/game.libretro.tic80_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.tyrquake_libretro_buildbot" name="Quake (TyrQuake)" provider-name="http://buildbot.libretro.com/" version="1.2020.18275">
@@ -2935,7 +2977,7 @@
       <path>linux_le_generic/game.libretro.tyrquake_libretro_buildbot-1.2020.18275.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.ume2015_libretro_buildbot" name="Multi (UME 2015)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
+  <addon id="game.libretro.ume2015_libretro_buildbot" name="Multi (UME 2015)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -2951,9 +2993,9 @@
       <license>MAME</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/ume2015_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 89335532 (2019-12-01)</news>
-      <size>42075805</size>
-      <path>linux_le_generic/game.libretro.ume2015_libretro_buildbot-1.2019.18231.zip</path>
+      <news>Built from libretro buildbot commit ba13fd96 (2020-03-18)</news>
+      <size>42075168</size>
+      <path>linux_le_generic/game.libretro.ume2015_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.uzem_libretro_buildbot" name="Uzebox (Uzem)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
@@ -2999,7 +3041,7 @@
       <path>linux_le_generic/game.libretro.vba_next_libretro_buildbot-1.2020.18269.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vbam_libretro_buildbot" name="Nintendo - Game Boy Advance (VBA-M)" provider-name="http://buildbot.libretro.com/" version="1.2020.18270">
+  <addon id="game.libretro.vbam_libretro_buildbot" name="Nintendo - Game Boy Advance (VBA-M)" provider-name="http://buildbot.libretro.com/" version="1.2020.18332">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.gba"/>
@@ -3016,9 +3058,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vbam_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit edd3c30a (2020-01-09)</news>
-      <size>540164</size>
-      <path>linux_le_generic/game.libretro.vbam_libretro_buildbot-1.2020.18270.zip</path>
+      <news>Built from libretro buildbot commit aeca8b4b (2020-03-11)</news>
+      <size>540177</size>
+      <path>linux_le_generic/game.libretro.vbam_libretro_buildbot-1.2020.18332.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.vecx_libretro_buildbot" name="GCE - Vectrex (vecx)" provider-name="http://buildbot.libretro.com/" version="1.2020.18271">
@@ -3064,163 +3106,163 @@
       <path>linux_le_generic/game.libretro.vemulator_libretro_buildbot-1.2019.18231.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vice_x128_libretro_buildbot" name="Commodore - C128 (VICE x128)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.vice_x128_libretro_buildbot" name="Commodore - C128 (VICE x128)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
-      <import addon="game.controller.default"/>
       <import addon="game.controller.keyboard"/>
+      <import addon="game.controller.default"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="vice_x128_libretro.so" point="kodi.gameclient">
       <platforms>C128</platforms>
-      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</extensions>
+      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>true</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Commodore - C128 (VICE x128)</summary>
-      <description lang="en_GB">Emulator for C128 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</description>
+      <description lang="en_GB">Emulator for C128 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</description>
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_x128_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit c2dca60b (2020-03-05)</news>
-      <size>1864657</size>
-      <path>linux_le_generic/game.libretro.vice_x128_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit 0bf2892b (2020-03-28)</news>
+      <size>1660523</size>
+      <path>linux_le_generic/game.libretro.vice_x128_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vice_x64_libretro_buildbot" name="Commodore - C64 (VICE x64, fast)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.vice_x64_libretro_buildbot" name="Commodore - C64 (VICE x64, fast)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
-      <import addon="game.controller.default"/>
       <import addon="game.controller.keyboard"/>
+      <import addon="game.controller.default"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="vice_x64_libretro.so" point="kodi.gameclient">
       <platforms>C64</platforms>
-      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</extensions>
+      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>true</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Commodore - C64 (VICE x64, fast)</summary>
-      <description lang="en_GB">Emulator for C64 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</description>
+      <description lang="en_GB">Emulator for C64 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</description>
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_x64_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit e26b1315 (2020-03-05)</news>
-      <size>1708745</size>
-      <path>linux_le_generic/game.libretro.vice_x64_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit d91689c6 (2020-03-28)</news>
+      <size>1593607</size>
+      <path>linux_le_generic/game.libretro.vice_x64_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vice_x64sc_libretro_buildbot" name="Commodore - C64 (VICE x64sc, accurate)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.vice_x64sc_libretro_buildbot" name="Commodore - C64 (VICE x64sc, accurate)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
     <extension library_linux="vice_x64sc_libretro.so" point="kodi.gameclient">
       <platforms>C64</platforms>
-      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</extensions>
+      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>true</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Commodore - C64 (VICE x64sc, accurate)</summary>
-      <description lang="en_GB">Emulator for C64 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</description>
+      <description lang="en_GB">Emulator for C64 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</description>
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_x64sc_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 6ee689dc (2020-03-05)</news>
-      <size>1531948</size>
-      <path>linux_le_generic/game.libretro.vice_x64sc_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit 378b7c78 (2020-03-28)</news>
+      <size>1419123</size>
+      <path>linux_le_generic/game.libretro.vice_x64sc_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vice_xcbm2_libretro_buildbot" name="Commodore - CBM-II (VICE xcbm2)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.vice_xcbm2_libretro_buildbot" name="Commodore - CBM-II (VICE xcbm2)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
     <extension library_linux="vice_xcbm2_libretro.so" point="kodi.gameclient">
       <platforms>CBM2</platforms>
-      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</extensions>
+      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>true</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Commodore - CBM-II (VICE xcbm2)</summary>
-      <description lang="en_GB">Emulator for CBM2 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</description>
+      <description lang="en_GB">Emulator for CBM2 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</description>
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_xcbm2_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 787ce803 (2020-03-05)</news>
-      <size>1224616</size>
-      <path>linux_le_generic/game.libretro.vice_xcbm2_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit 2f02c612 (2020-03-28)</news>
+      <size>1111810</size>
+      <path>linux_le_generic/game.libretro.vice_xcbm2_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vice_xpet_libretro_buildbot" name="Commodore - PET (VICE xpet)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.vice_xpet_libretro_buildbot" name="Commodore - PET (VICE xpet)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
     <extension library_linux="vice_xpet_libretro.so" point="kodi.gameclient">
       <platforms>PET</platforms>
-      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</extensions>
+      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>true</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Commodore - PET (VICE xpet)</summary>
-      <description lang="en_GB">Emulator for PET by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u[CR][CR]Game Addon Notes: (i) Place BIOS files in system/vice/PET folder.[CR][CR]BIOS files are required for this core to function correctly</description>
+      <description lang="en_GB">Emulator for PET by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf[CR][CR]Game Addon Notes: (i) Place BIOS files in system/vice/PET folder.[CR][CR]BIOS files are required for this core to function correctly</description>
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_xpet_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 23ee56e4 (2020-03-05)</news>
-      <size>1289839</size>
-      <path>linux_le_generic/game.libretro.vice_xpet_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit c0339683 (2020-03-28)</news>
+      <size>1175730</size>
+      <path>linux_le_generic/game.libretro.vice_xpet_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vice_xplus4_libretro_buildbot" name="Commodore - PLUS4 (VICE xplus4)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.vice_xplus4_libretro_buildbot" name="Commodore - PLUS4 (VICE xplus4)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
-      <import addon="game.controller.default"/>
       <import addon="game.controller.keyboard"/>
+      <import addon="game.controller.default"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="vice_xplus4_libretro.so" point="kodi.gameclient">
       <platforms>PLUS4</platforms>
-      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</extensions>
+      <extensions>d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>true</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Commodore - PLUS4 (VICE xplus4)</summary>
-      <description lang="en_GB">Emulator for PLUS4 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</description>
+      <description lang="en_GB">Emulator for PLUS4 by VICE Core Team Members[CR]Supported files: d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</description>
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_xplus4_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit c958ade0 (2020-03-05)</news>
-      <size>1422690</size>
-      <path>linux_le_generic/game.libretro.vice_xplus4_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit f0a7a5b3 (2020-03-28)</news>
+      <size>1309776</size>
+      <path>linux_le_generic/game.libretro.vice_xplus4_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vice_xvic_libretro_buildbot" name="Commodore - VIC20 (VICE xvic)" provider-name="http://buildbot.libretro.com/" version="1.2020.18326">
+  <addon id="game.libretro.vice_xvic_libretro_buildbot" name="Commodore - VIC20 (VICE xvic)" provider-name="http://buildbot.libretro.com/" version="1.2020.18349">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.mouse"/>
-      <import addon="game.controller.default"/>
       <import addon="game.controller.keyboard"/>
+      <import addon="game.controller.default"/>
+      <import addon="game.controller.mouse"/>
     </requires>
     <extension library_linux="vice_xvic_libretro.so" point="kodi.gameclient">
       <platforms>VIC20</platforms>
-      <extensions>20|40|60|a0|b0|d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</extensions>
+      <extensions>20|40|60|a0|b0|d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>true</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Commodore - VIC20 (VICE xvic)</summary>
-      <description lang="en_GB">Emulator for VIC20 by VICE Core Team Members[CR]Supported files: 20|40|60|a0|b0|d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u</description>
+      <description lang="en_GB">Emulator for VIC20 by VICE Core Team Members[CR]Supported files: 20|40|60|a0|b0|d64|d71|d80|d81|d82|g64|g41|x64|t64|tap|prg|p00|crt|bin|zip|gz|d6z|d7z|d8z|g6z|g4z|x6z|cmd|m3u|vsf</description>
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vice_xvic_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 8cdee737 (2020-03-05)</news>
-      <size>1436360</size>
-      <path>linux_le_generic/game.libretro.vice_xvic_libretro_buildbot-1.2020.18326.zip</path>
+      <news>Built from libretro buildbot commit a55a98bb (2020-03-28)</news>
+      <size>1321997</size>
+      <path>linux_le_generic/game.libretro.vice_xvic_libretro_buildbot-1.2020.18349.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.virtualjaguar_libretro_buildbot" name="Atari - Jaguar (Virtual Jaguar)" provider-name="http://buildbot.libretro.com/" version="1.2020.18269">
@@ -3245,7 +3287,7 @@
       <path>linux_le_generic/game.libretro.virtualjaguar_libretro_buildbot-1.2020.18269.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.vitaquake2_libretro_buildbot" name="Quake 2 (vitaQuake 2)" provider-name="http://buildbot.libretro.com/" version="1.2020.18321">
+  <addon id="game.libretro.vitaquake2_libretro_buildbot" name="Quake 2 (vitaQuake 2)" provider-name="http://buildbot.libretro.com/" version="1.2020.18329">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -3261,9 +3303,9 @@
       <license>GPLv2</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/vitaquake2_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit c07b20db (2020-02-29)</news>
-      <size>702594</size>
-      <path>linux_le_generic/game.libretro.vitaquake2_libretro_buildbot-1.2020.18321.zip</path>
+      <news>Built from libretro buildbot commit ab0401e3 (2020-03-08)</news>
+      <size>702523</size>
+      <path>linux_le_generic/game.libretro.vitaquake2_libretro_buildbot-1.2020.18329.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.vitaquake3_libretro_buildbot" name="Quake III: Arena (vitaQuake 3)" provider-name="http://buildbot.libretro.com/" version="1.2020.18272">
@@ -3308,7 +3350,7 @@
       <path>linux_le_generic/game.libretro.vitavoyager_libretro_buildbot-1.2020.18264.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.x1_libretro_buildbot" name="Sharp X1 (X Millenium)" provider-name="http://buildbot.libretro.com/" version="1.2020.18327">
+  <addon id="game.libretro.x1_libretro_buildbot" name="Sharp X1 (X Millenium)" provider-name="http://buildbot.libretro.com/" version="1.2020.18328">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -3324,12 +3366,12 @@
       <license>BSD</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/x1_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit d66bcd0e (2020-03-06)</news>
-      <size>177443</size>
-      <path>linux_le_generic/game.libretro.x1_libretro_buildbot-1.2020.18327.zip</path>
+      <news>Built from libretro buildbot commit d66bcd0e (2020-03-07)</news>
+      <size>177441</size>
+      <path>linux_le_generic/game.libretro.x1_libretro_buildbot-1.2020.18328.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.xrick_libretro_buildbot" name="Rick Dangerous (XRick)" provider-name="http://buildbot.libretro.com/" version="1.2020.18301">
+  <addon id="game.libretro.xrick_libretro_buildbot" name="Rick Dangerous (XRick)" provider-name="http://buildbot.libretro.com/" version="1.2020.18339">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
     </requires>
@@ -3345,9 +3387,9 @@
       <license>GPLv3</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/xrick_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 3781dc92 (2020-02-09)</news>
-      <size>308896</size>
-      <path>linux_le_generic/game.libretro.xrick_libretro_buildbot-1.2020.18301.zip</path>
+      <news>Built from libretro buildbot commit 2bc464ad (2020-03-18)</news>
+      <size>308897</size>
+      <path>linux_le_generic/game.libretro.xrick_libretro_buildbot-1.2020.18339.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.yabasanshiro_libretro_buildbot" name="Sega - Saturn (YabaSanshiro)" provider-name="http://buildbot.libretro.com/" version="1.2019.18248">

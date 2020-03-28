@@ -476,7 +476,8 @@ def generate_changelog(build_data=None):
 			if len(current_platform_changes)>0:
 				change_text = change_text+'     Platform '+platforms+':[CR]'
 				for changes in current_platform_changes:
-					change_text = change_text+changes['file'].rsplit('-')[0]+' updated to '+changes['commit']+' ('+changes['date']+')[CR]'
+					if changes is not None and 'file' in changes.keys() and 'commit' in changes.keys() and 'date' in changes.keys() and changes['file'] is not None and changes['commit'] is not None and changes['date'] is not None:
+						change_text = change_text+changes['file'].rsplit('-')[0]+' updated to '+changes['commit']+' ('+changes['date']+')[CR]'
 		if change_text == 'kodi_libretro_buildbot_game_addons changelog:[CR]':
 			change_text = None
 	return change_text
