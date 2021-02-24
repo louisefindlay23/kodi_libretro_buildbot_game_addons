@@ -23,4 +23,6 @@ jobs:
       - name: Starting Buildbot Builder
         run: |
           echo Starting Buildbot Builder
+          sudo apt-get install python3-lxml
+          python -c "import sys; print(sys.version)"
           python ci_test.py
