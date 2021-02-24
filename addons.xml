@@ -61,6 +61,7 @@
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Atari - 5200 (Atari800)</summary>
       <description lang="en_GB">Emulator for Atari 5200 by Petr Stehlik[CR]Supported files: xfd|atr|cdm|cas|bin|a52|zip|atx|car|com|xex[CR][CR]Game Addon Notes: (!) 5200.rom (md5): 281f20ea4320404ec820fb7ec0693b38[CR][CR]BIOS files are required for this core to function correctly</description>
+      <license>GPLv2</license>
       <platform>osx-x86_64</platform>
       <source>http://buildbot.libretro.com/nightly/apple/osx/x86_64/latest/atari800_libretro.dylib.zip</source>
       <news>Built from libretro buildbot commit 67c4594b (2021-02-16)</news>
