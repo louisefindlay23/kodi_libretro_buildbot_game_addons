@@ -28,7 +28,7 @@ jobs:
           python ci_test.py
 
       - name: Update addons in the repository
-        uses: test-room-7/action-update-file@v2
+        uses: test-room-7/action-update-file@v1
         with:
           file-path: |
               /kodi_libretro_buildbot_game_addons/*.xml
