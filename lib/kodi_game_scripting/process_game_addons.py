@@ -34,7 +34,7 @@ from .libretro_super import LibretroSuper
 from .versions import AddonVersion
 
 COMMIT_MSG = "Updated by kodi-game-scripting\n\n" \
-             "https://github.com/fetzerch/kodi-game-scripting/"
+             "https://github.com/kodi-game/kodi-game-scripting/"
 
 
 def main():
@@ -423,13 +423,14 @@ class KodiGameAddon():
         self.info['git']['diff'] = self._repo.diff()
 
     def tag(self):
-        """ Creating tag in Git repository """
-        print("  Creating tag in Git repository {}: {}".format(
+        """ Creating tags in Git repository """
+        print("  Creating tags in Git repository {}: {}".format(
             self.name, self.info['game']['version']))
-        self._repo.tag('{}-Leia'.format(self.info['game']['version']))
+        for branch in ['Leia', 'Matrix']:
+            self._repo.tag('{}-{}'.format(self.info['game']['version'], branch))
 
     def push(self):
         """ Pushing changes to GitHub repository """
         print("  Pushing changes to GitHub repository {}".format(self.name))
         branch = self.info['game']['branch']
-        self._repo.push(branch, tags=branch == 'master', sleep=3*60)
+        self._repo.push(branch, tags=(branch == 'master'), sleep=(3 * 60))
