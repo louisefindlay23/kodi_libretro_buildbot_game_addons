@@ -40,5 +40,5 @@ jobs:
               /kodi_libretro_buildbot_game_addons/linux_le_generic/*.zip
               /kodi_libretro_buildbot_game_addons/osx-x86_64/*.zip
               /kodi_libretro_buildbot_game_addons/windows-x86_64/*.zip
-        commit-msg: Update addons ${{ steps.date.outputs.date }}
-        github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit-msg: Update addons ${{ steps.date.outputs.date }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
