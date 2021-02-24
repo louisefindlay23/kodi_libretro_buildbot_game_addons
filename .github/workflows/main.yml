@@ -31,14 +31,14 @@ jobs:
         uses: test-room-7/action-update-file@v2
         with:
         file-path: |
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/*.xml
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/*.xml.md5
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/android-aarch64/*.zip
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/android-armv7/*.zip
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/linux/*.zip
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/linux_le_armhf/*.zip
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/linux_le_generic/*.zip
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/osx-x86_64/*.zip
-            /home/runner/work/kodi_libretro_buildbot_game_addons/kodi_libretro_buildbot_game_addons/windows-x86_64/*.zip
+            /kodi_libretro_buildbot_game_addons/*.xml
+            /kodi_libretro_buildbot_game_addons/*.xml.md5
+            /kodi_libretro_buildbot_game_addons/android-aarch64/*.zip
+            /kodi_libretro_buildbot_game_addons/android-armv7/*.zip
+            /kodi_libretro_buildbot_game_addons/linux/*.zip
+            /kodi_libretro_buildbot_game_addons/linux_le_armhf/*.zip
+            /kodi_libretro_buildbot_game_addons/linux_le_generic/*.zip
+            /kodi_libretro_buildbot_game_addons/osx-x86_64/*.zip
+            /kodi_libretro_buildbot_game_addons/windows-x86_64/*.zip
         commit-msg: Update addons ${{ steps.date.outputs.date }}
         github-token: ${{ secrets.GITHUB_TOKEN }}
