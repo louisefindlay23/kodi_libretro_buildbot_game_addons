@@ -8,7 +8,7 @@ To install the game addons, choose the appropriate repository:
 - LibreElec x86_64 users can install [this repository](https://github.com/zach-morris/kodi_libretro_buildbot_game_addons/raw/master/repository.kodi_libretro_buildbot_game_addons_le_generic.zip)
 - LibreElec or Raspbian OS / RPi users can install [this repository](https://github.com/zach-morris/kodi_libretro_buildbot_game_addons/raw/master/repository.kodi_libretro_buildbot_game_addons_le_armhf.zip)
 
-You will also need the Libretro Compatability addon (game.libretro) installed, which is available in the official Kodi repository / Kodi ppa.
+You will also need the Libretro Compatability addon ([game.libretro](https://kodi.wiki/view/Add-on:Libretro_Compatibility)) installed, which is available in the official Kodi repository / Kodi ppa.
 
 Game Addon Status:
 
