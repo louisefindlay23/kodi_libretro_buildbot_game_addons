@@ -10,6 +10,12 @@ To install the game addons, choose the appropriate repository:
 
 You will also need the Libretro Compatability addon ([game.libretro](https://kodi.wiki/view/Add-on:Libretro_Compatibility)) installed, which is available in the official Kodi repository / Kodi ppa.
 
+Help Needed:
+
+If you want to support this repository, help is needed in getting the files in [this folder](https://github.com/zach-morris/kodi_libretro_buildbot_game_addons/tree/master/resources/addon_resources) in order:
+- Adding assets for new cores (icons, etc)
+- Adding / editing buttonmap and topology xml files so they will utilize the correct controllers in Kodi
+
 Game Addon Status:
 
 | Platform                                 | core                               | Status  | Notes                                                                                                                                                                     | 
