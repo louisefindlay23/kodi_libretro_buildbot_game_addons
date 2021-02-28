@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<buttonmap>
+    <device name="Xbox 360-compatible controller" provider="xinput" buttoncount="15" axiscount="6">
+        <configuration />
+        <controller id="game.controller.gamecube">
+            <feature name="a" button="0" />
+            <feature name="b" button="1" />
+            <feature name="controlstick">
+                <up axis="+1" />
+                <down axis="-1" />
+                <right axis="+0" />
+                <left axis="-0" />
+            </feature>
+            <feature name="cstick">
+                <up axis="+3" />
+                <down axis="-3" />
+                <right axis="+2" />
+                <left axis="-2" />
+            </feature>
+            <feature name="down" button="12" />
+            <feature name="l" axis="+4" />
+            <feature name="left" button="13" />
+            <feature name="r" axis="+5" />
+            <feature name="right" button="11" />
+            <feature name="start" button="7" />
+            <feature name="up" button="10" />
+            <feature name="x" button="2" />
+            <feature name="y" button="3" />
+            <feature name="z" button="4" />
+        </controller>
+    </device>
+</buttonmap>
