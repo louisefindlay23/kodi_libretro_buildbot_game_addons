@@ -130,28 +130,6 @@
       <path>linux_le_generic/game.libretro.easyrpg_libretro_buildbot-1.2021.18650.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.stella_libretro_buildbot" name="Atari - 2600 (Stella)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
-    <requires>
-      <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.atari.2600"/>
-    </requires>
-    <extension point="kodi.gameclient" library_linux="stella_libretro.so">
-      <platforms>Atari 2600</platforms>
-      <extensions>a26|bin</extensions>
-      <supports_vfs>true</supports_vfs>
-      <supports_standalone>false</supports_standalone>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en_GB">Atari - 2600 (Stella)</summary>
-      <description lang="en_GB">Emulator for Atari 2600 by Stephen Anthony|Bradford Mott|Eckhard Stolberg|Brian Watson[CR]Supported files: a26|bin</description>
-      <license>GPLv2</license>
-      <platform>all</platform>
-      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/stella_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 06de839d (2021-02-26)</news>
-      <size>1606606</size>
-      <path>linux_le_generic/game.libretro.stella_libretro_buildbot-1.2021.18684.zip</path>
-    </extension>
-  </addon>
   <addon id="game.libretro.prosystem_libretro_buildbot" name="Atari - 7800 (ProSystem)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
@@ -258,27 +236,6 @@
       <news>Built from libretro buildbot commit 80d49f19 (2021-02-26)</news>
       <size>696926</size>
       <path>linux_le_generic/game.libretro.dinothawr_libretro_buildbot-1.2021.18684.zip</path>
-    </extension>
-  </addon>
-  <addon id="game.libretro.genesis_plus_gx_wide_libretro_buildbot" name="Sega - MS/GG/MD/CD (Genesis Plus GX Wide)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
-    <requires>
-      <import addon="game.libretro" version="1.0.0"/>
-    </requires>
-    <extension point="kodi.gameclient" library_linux="genesis_plus_gx_wide_libretro.so">
-      <platforms>Sega 8/16-bit (Various)</platforms>
-      <extensions>mdx|md|smd|gen|bin|cue|iso|sms|bms|gg|sg|68k|chd</extensions>
-      <supports_vfs>false</supports_vfs>
-      <supports_standalone>false</supports_standalone>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en_GB">Sega - MS/GG/MD/CD (Genesis Plus GX Wide)</summary>
-      <description lang="en_GB">Emulator for Sega 8/16-bit (Various) by Charles McDonald|Eke-Eke|heyjoeway[CR]Supported files: mdx|md|smd|gen|bin|cue|iso|sms|bms|gg|sg|68k|chd[CR][CR]Game Addon Notes: (!) sk2chip.bin (md5): b4e76e416b887f4e7413ba76fa735f16|(!) sk.bin (md5): 4ea493ea4e9f6c9ebfccbdb15110367e</description>
-      <license>Non-commercial</license>
-      <platform>all</platform>
-      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/genesis_plus_gx_wide_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit a033b37b (2021-02-26)</news>
-      <size>856352</size>
-      <path>linux_le_generic/game.libretro.genesis_plus_gx_wide_libretro_buildbot-1.2021.18684.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.pokemini_libretro_buildbot" name="Nintendo - Pokemon Mini (PokeMini)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
@@ -796,6 +753,28 @@
       <path>linux_le_generic/game.libretro.tyrquake_libretro_buildbot-1.2021.18684.zip</path>
     </extension>
   </addon>
+  <addon id="game.libretro.stella_libretro_buildbot" name="Atari - 2600 (Stella)" version="1.2021.18685" provider-name="http://buildbot.libretro.com/">
+    <requires>
+      <import addon="game.libretro" version="1.0.0"/>
+      <import addon="game.controller.atari.2600"/>
+    </requires>
+    <extension point="kodi.gameclient" library_linux="stella_libretro.so">
+      <platforms>Atari 2600</platforms>
+      <extensions>a26|bin</extensions>
+      <supports_vfs>true</supports_vfs>
+      <supports_standalone>false</supports_standalone>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Atari - 2600 (Stella)</summary>
+      <description lang="en_GB">Emulator for Atari 2600 by Stephen Anthony|Bradford Mott|Eckhard Stolberg|Brian Watson[CR]Supported files: a26|bin</description>
+      <license>GPLv2</license>
+      <platform>all</platform>
+      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/stella_libretro.so.zip</source>
+      <news>Built from libretro buildbot commit 88519469 (2021-02-27)</news>
+      <size>1606610</size>
+      <path>linux_le_generic/game.libretro.stella_libretro_buildbot-1.2021.18685.zip</path>
+    </extension>
+  </addon>
   <addon id="game.libretro.fbalpha2012_cps3_libretro_buildbot" name="Arcade (FB Alpha 2012 CPS-3)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
@@ -977,7 +956,7 @@
       <path>linux_le_generic/game.libretro.vitaquake2_libretro_buildbot-1.2021.18684.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.genesis_plus_gx_libretro_buildbot" name="Sega - MS/GG/MD/CD (Genesis Plus GX)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
+  <addon id="game.libretro.genesis_plus_gx_libretro_buildbot" name="Sega - MS/GG/MD/CD (Genesis Plus GX)" version="1.2021.18685" provider-name="http://buildbot.libretro.com/">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
       <import addon="game.controller.genesis.6button"/>
@@ -985,19 +964,19 @@
     </requires>
     <extension point="kodi.gameclient" library_linux="genesis_plus_gx_libretro.so">
       <platforms>Sega 8/16-bit (Various)</platforms>
-      <extensions>mdx|md|smd|gen|bin|cue|iso|sms|bms|gg|sg|68k|chd</extensions>
+      <extensions>mdx|md|smd|gen|bin|cue|iso|sms|bms|gg|sg|68k|chd|m3u</extensions>
       <supports_vfs>false</supports_vfs>
       <supports_standalone>false</supports_standalone>
     </extension>
     <extension point="xbmc.addon.metadata">
       <summary lang="en_GB">Sega - MS/GG/MD/CD (Genesis Plus GX)</summary>
-      <description lang="en_GB">Emulator for Sega 8/16-bit (Various) by Charles McDonald|Eke-Eke[CR]Supported files: mdx|md|smd|gen|bin|cue|iso|sms|bms|gg|sg|68k|chd[CR][CR]Game Addon Notes: (!) sk2chip.bin (md5): b4e76e416b887f4e7413ba76fa735f16|(!) sk.bin (md5): 4ea493ea4e9f6c9ebfccbdb15110367e</description>
+      <description lang="en_GB">Emulator for Sega 8/16-bit (Various) by Charles McDonald|Eke-Eke[CR]Supported files: mdx|md|smd|gen|bin|cue|iso|sms|bms|gg|sg|68k|chd|m3u[CR][CR]Game Addon Notes: (!) sk2chip.bin (md5): b4e76e416b887f4e7413ba76fa735f16|(!) sk.bin (md5): 4ea493ea4e9f6c9ebfccbdb15110367e</description>
       <license>Non-commercial</license>
       <platform>all</platform>
       <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/genesis_plus_gx_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 9842c3c4 (2021-02-26)</news>
-      <size>1085498</size>
-      <path>linux_le_generic/game.libretro.genesis_plus_gx_libretro_buildbot-1.2021.18684.zip</path>
+      <news>Built from libretro buildbot commit 5d9ff7f4 (2021-02-27)</news>
+      <size>1088283</size>
+      <path>linux_le_generic/game.libretro.genesis_plus_gx_libretro_buildbot-1.2021.18685.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.emux_sms_libretro_buildbot" name="Sega - Master System (Emux SMS)" provider-name="http://buildbot.libretro.com/" version="1.2019.18231">
@@ -2152,29 +2131,6 @@
       <path>linux_le_generic/game.libretro.nxengine_libretro_buildbot-1.2021.18684.zip</path>
     </extension>
   </addon>
-  <addon id="game.libretro.ppsspp_libretro_buildbot" name="Sony - PlayStation Portable (PPSSPP)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
-    <requires>
-      <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.psp"/>
-    </requires>
-    <extension point="kodi.gameclient" library_linux="ppsspp_libretro.so">
-      <platforms>PSP</platforms>
-      <extensions>elf|iso|cso|prx|pbp</extensions>
-      <supports_vfs>false</supports_vfs>
-      <supports_standalone>false</supports_standalone>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en_GB">Sony - PlayStation Portable (PPSSPP)</summary>
-      <description lang="en_GB">Emulator for PSP by Henrik Hrydgard[CR]Supported files: elf|iso|cso|prx|pbp[CR][CR]Game Addon Notes: (!) ppge_atlas.zim (md5): a93fc411c1ce7d001a2a812643c70085|(!) PPSSPP requires the asset files, lang folder, and flash0 folder inside the 'system\PPSSPP' directory.|(!) Check https://docs.libretro.com/library/ppsspp/#bios to find out how to get the assets files.[CR][CR]BIOS files are required for this core to function correctly</description>
-      <license>GPLv2</license>
-      <platform>all</platform>
-      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/ppsspp_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit d03a0df3 (2021-02-26)</news>
-      <size>5836375</size>
-      <path>linux_le_generic/game.libretro.ppsspp_libretro_buildbot-1.2021.18684.zip</path>
-      <broken>Not yet compatible</broken>
-    </extension>
-  </addon>
   <addon id="game.libretro.mesen-s_libretro_buildbot" name="Nintendo - SNES / SFC / Game Boy / Color (Mesen-S)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
@@ -2450,6 +2406,28 @@
       <news>Built from libretro buildbot commit 02bdaff5 (2021-02-26)</news>
       <size>367540</size>
       <path>linux_le_generic/game.libretro.mednafen_gba_libretro_buildbot-1.2021.18684.zip</path>
+    </extension>
+  </addon>
+  <addon id="game.libretro.stella2014_libretro_buildbot" name="Atari - 2600 (Stella 2014)" version="1.2021.18685" provider-name="http://buildbot.libretro.com/">
+    <requires>
+      <import addon="game.libretro" version="1.0.0"/>
+      <import addon="game.controller.atari.2600"/>
+    </requires>
+    <extension point="kodi.gameclient" library_linux="stella2014_libretro.so">
+      <platforms>Atari 2600</platforms>
+      <extensions>a26|bin</extensions>
+      <supports_vfs>true</supports_vfs>
+      <supports_standalone>false</supports_standalone>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Atari - 2600 (Stella 2014)</summary>
+      <description lang="en_GB">Emulator for Atari 2600 by Stephen Anthony|Bradford Mott|Eckhard Stolberg|Brian Watson[CR]Supported files: a26|bin</description>
+      <license>GPLv2</license>
+      <platform>all</platform>
+      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/stella2014_libretro.so.zip</source>
+      <news>Built from libretro buildbot commit 1a3c17e8 (2021-02-27)</news>
+      <size>800830</size>
+      <path>linux_le_generic/game.libretro.stella2014_libretro_buildbot-1.2021.18685.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.cannonball_libretro_buildbot" name="Cannonball" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
@@ -2766,6 +2744,27 @@
       <news>Built from libretro buildbot commit 78a83a0c (2021-02-26)</news>
       <size>847803</size>
       <path>linux_le_generic/game.libretro.vice_xcbm2_libretro_buildbot-1.2021.18684.zip</path>
+    </extension>
+  </addon>
+  <addon id="game.libretro.genesis_plus_gx_wide_libretro_buildbot" name="Sega - MS/GG/MD/CD (Genesis Plus GX Wide)" version="1.2021.18685" provider-name="http://buildbot.libretro.com/">
+    <requires>
+      <import addon="game.libretro" version="1.0.0"/>
+    </requires>
+    <extension point="kodi.gameclient" library_linux="genesis_plus_gx_wide_libretro.so">
+      <platforms>Sega 8/16-bit (Various)</platforms>
+      <extensions>mdx|md|smd|gen|bin|cue|iso|sms|bms|gg|sg|68k|chd|m3u</extensions>
+      <supports_vfs>false</supports_vfs>
+      <supports_standalone>false</supports_standalone>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Sega - MS/GG/MD/CD (Genesis Plus GX Wide)</summary>
+      <description lang="en_GB">Emulator for Sega 8/16-bit (Various) by Charles McDonald|Eke-Eke|heyjoeway[CR]Supported files: mdx|md|smd|gen|bin|cue|iso|sms|bms|gg|sg|68k|chd|m3u[CR][CR]Game Addon Notes: (!) sk2chip.bin (md5): b4e76e416b887f4e7413ba76fa735f16|(!) sk.bin (md5): 4ea493ea4e9f6c9ebfccbdb15110367e</description>
+      <license>Non-commercial</license>
+      <platform>all</platform>
+      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/genesis_plus_gx_wide_libretro.so.zip</source>
+      <news>Built from libretro buildbot commit 6c717a34 (2021-02-27)</news>
+      <size>897835</size>
+      <path>linux_le_generic/game.libretro.genesis_plus_gx_wide_libretro_buildbot-1.2021.18685.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.citra_libretro_buildbot" name="Nintendo - 3DS (Citra)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
@@ -3512,6 +3511,29 @@
       <path>linux_le_generic/game.libretro.fceumm_libretro_buildbot-1.2021.18684.zip</path>
     </extension>
   </addon>
+  <addon id="game.libretro.ppsspp_libretro_buildbot" name="Sony - PlayStation Portable (PPSSPP)" version="1.2021.18685" provider-name="http://buildbot.libretro.com/">
+    <requires>
+      <import addon="game.libretro" version="1.0.0"/>
+      <import addon="game.controller.psp"/>
+    </requires>
+    <extension point="kodi.gameclient" library_linux="ppsspp_libretro.so">
+      <platforms>PSP</platforms>
+      <extensions>elf|iso|cso|prx|pbp</extensions>
+      <supports_vfs>false</supports_vfs>
+      <supports_standalone>false</supports_standalone>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en_GB">Sony - PlayStation Portable (PPSSPP)</summary>
+      <description lang="en_GB">Emulator for PSP by Henrik Hrydgard[CR]Supported files: elf|iso|cso|prx|pbp[CR][CR]Game Addon Notes: (!) ppge_atlas.zim (md5): a93fc411c1ce7d001a2a812643c70085|(!) PPSSPP requires the asset files, lang folder, and flash0 folder inside the 'system\PPSSPP' directory.|(!) Check https://docs.libretro.com/library/ppsspp/#bios to find out how to get the assets files.[CR][CR]BIOS files are required for this core to function correctly</description>
+      <license>GPLv2</license>
+      <platform>all</platform>
+      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/ppsspp_libretro.so.zip</source>
+      <news>Built from libretro buildbot commit 17029fec (2021-02-27)</news>
+      <size>5836512</size>
+      <path>linux_le_generic/game.libretro.ppsspp_libretro_buildbot-1.2021.18685.zip</path>
+      <broken>Not yet compatible</broken>
+    </extension>
+  </addon>
   <addon id="game.libretro.dosbox_pure_libretro_buildbot" name="DOS (DOSBox-Pure)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
     <requires>
       <import addon="game.libretro" version="1.0.0"/>
@@ -3531,28 +3553,6 @@
       <news>Built from libretro buildbot commit eda5c952 (2021-02-26)</news>
       <size>1061023</size>
       <path>linux_le_generic/game.libretro.dosbox_pure_libretro_buildbot-1.2021.18684.zip</path>
-    </extension>
-  </addon>
-  <addon id="game.libretro.stella2014_libretro_buildbot" name="Atari - 2600 (Stella 2014)" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
-    <requires>
-      <import addon="game.libretro" version="1.0.0"/>
-      <import addon="game.controller.atari.2600"/>
-    </requires>
-    <extension point="kodi.gameclient" library_linux="stella2014_libretro.so">
-      <platforms>Atari 2600</platforms>
-      <extensions>a26|bin</extensions>
-      <supports_vfs>true</supports_vfs>
-      <supports_standalone>false</supports_standalone>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-      <summary lang="en_GB">Atari - 2600 (Stella 2014)</summary>
-      <description lang="en_GB">Emulator for Atari 2600 by Stephen Anthony|Bradford Mott|Eckhard Stolberg|Brian Watson[CR]Supported files: a26|bin</description>
-      <license>GPLv2</license>
-      <platform>all</platform>
-      <source>http://buildbot.libretro.com/nightly/linux/x86_64/latest/stella2014_libretro.so.zip</source>
-      <news>Built from libretro buildbot commit 348f80fc (2021-02-26)</news>
-      <size>794791</size>
-      <path>linux_le_generic/game.libretro.stella2014_libretro_buildbot-1.2021.18684.zip</path>
     </extension>
   </addon>
   <addon id="game.libretro.gme_libretro_buildbot" name="Game Music Emu" version="1.2021.18684" provider-name="http://buildbot.libretro.com/">
